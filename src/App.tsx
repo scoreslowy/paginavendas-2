@@ -380,10 +380,10 @@ function App() {
             </div>
           </div>
         </div>
-        
+
         {/* Botão no final da seção */}
         <div className="flex justify-center mt-12">
-          <button 
+          <button
             onClick={scrollToOffer}
             className="group relative overflow-hidden min-w-[320px] px-8 py-4 rounded-xl border border-white/30 transition-all duration-300 hover:border-white/50"
             style={{
@@ -397,136 +397,7 @@ function App() {
                 <span className="whitespace-nowrap text-white font-bold uppercase tracking-wide">QUERO APRENDER ESSAS MÚSICAS</span>
                 <ArrowRight className="w-5 h-5 text-white" />
               </div>
-              
-              {/* Texto hover */}
-              <div className="absolute inset-0 flex items-center justify-center gap-3 translate-y-8 opacity-0 group-hover:translate-y-0 group-hover:opacity-100 transition-all duration-300">
-                <span className="whitespace-nowrap text-white font-bold uppercase tracking-wide">QUERO TOCAR PIANO</span>
-                <ArrowRight className="w-5 h-5 text-white animate-pulse" />
-              </div>
-            </div>
-          </button>
-        </div>
-      </section>
 
-        {/* Seção de Rateios */}
-      <section className="py-20" style={{ 
-        background: 'linear-gradient(to bottom, #000000 0%, #18181B 50%, #000000 100%)'
-      }}>
-        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-16">
-            <h2 className="text-3xl md:text-4xl font-black mb-8 text-white">
-              Veja o que nossos últimos <span className="text-yellow-500">alunos</span> disseram do <span className="text-yellow-500">CURSO TOCA AI</span>:
-            </h2>
-          </div>
-
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-x-12 gap-y-3">
-            {/* Coluna Esquerda */}
-            <div className="space-y-3 text-center">
-              <p className="text-white text-sm">💔│Someone Like You – Adele</p>
-              <p className="text-white text-sm">🎤│All of Me – John Legend</p>
-              <p className="text-white text-sm">📦│Let It Be – The Beatles</p>
-              <p className="text-white text-sm">📦│Perfect – Ed Sheeran</p>
-              <p className="text-white text-sm">📦│A Thousand Miles – Vanessa Carlton</p>
-              <p className="text-white text-sm">🎤│When I Was Your Man – Bruno Mars</p>
-              <p className="text-white text-sm">📦│Stay With Me – Sam Smith</p>
-              <p className="text-white text-sm">📦│Shallow – Lady Gaga & Bradley Cooper</p>
-              <p className="text-white text-sm">📦│Hallelujah – Leonard Cohen</p>
-              <p className="text-white text-sm">💔│Easy On Me – Adele</p>
-              <p className="text-white text-sm">❤️│Love Me Like You Do – Ellie Goulding</p>
-              <p className="text-white text-sm">🎤│Just the Way You Are – Bruno Mars</p>
-              <p className="text-white text-sm">📦│Say You Won't Let Go – James Arthur</p>
-              <p className="text-white text-sm">📦│If I Ain't Got You – Alicia Keys</p>
-              <p className="text-white text-sm">🌌│Clocks – Coldplay</p>
-              <p className="text-white text-sm">🌌│Fix You – Coldplay</p>
-              <p className="text-white text-sm">📦│Jealous – Labrinth</p>
-              <p className="text-white text-sm">📦│Too Good at Goodbyes – Sam Smith</p>
-              <p className="text-white text-sm">🌌│The Scientist – Coldplay</p>
-              <p className="text-white text-sm">💔│Hello – Adele</p>
-              <p className="text-white text-sm">🎼│Für Elise – Beethoven</p>
-              <p className="text-white text-sm">📦│Clair de Lune – Debussy</p>
-              <p className="text-white text-sm">🎼│Moonlight Sonata – Beethoven</p>
-              <p className="text-white text-sm">📦│Canon in D – Pachelbel</p>
-              <p className="text-white text-sm">🎼│Nocturne Op.9 No.2 – Chopin</p>
-              <p className="text-white text-sm">📦│The Entertainer – Scott Joplin</p>
-              <p className="text-white text-sm">📦│Gymnopédie No.1 – Erik Satie</p>
-              <p className="text-white text-sm">📦│Prelude in C Major – Bach</p>
-              <p className="text-white text-sm">📦│Ave Maria – Schubert</p>
-              <p className="text-white text-sm">🎼│Rondo Alla Turca – Mozart</p>
-              <p className="text-white text-sm">📦│Swan Lake Theme – Tchaikovsky</p>
-              <p className="text-white text-sm">📦│Hungarian Rhapsody No.2 – Liszt</p>
-              <p className="text-white text-sm">📦│Liebestraum No.3 – Liszt</p>
-              <p className="text-white text-sm">📦│Toccata and Fugue in D minor – Bach</p>
-              <p className="text-white text-sm">📦│Spring (Four Seasons) – Vivaldi</p>
-              <p className="text-white text-sm">📦│La Campanella – Liszt</p>
-              <p className="text-white text-sm">📦│Dance of the Sugar Plum Fairy – Tchaikovsky</p>
-              <p className="text-white text-sm">📦│Air on the G String – Bach</p>
-              <p className="text-white text-sm">📦│Arabesque No.1 – Debussy</p>
-              <p className="text-white text-sm">📦│Meditation – Massenet</p>
-            </div>
-
-            {/* Coluna Direita */}
-            <div className="space-y-3 text-center">
-              <p className="text-white text-sm">💭│Dream On – Aerosmith</p>
-              <p className="text-white text-sm">📦│Hey Jude – The Beatles</p>
-              <p className="text-white text-sm">📦│Sweet Child O' Mine – Guns N' Roses</p>
-              <p className="text-white text-sm">📦│We Are the Champions – Queen</p>
-              <p className="text-white text-sm">📦│Come Together – The Beatles</p>
-              <p className="text-white text-sm">📦│Tiny Dancer – Elton John</p>
-              <p className="text-white text-sm">📦│Rocket Man – Elton John</p>
-              <p className="text-white text-sm">📦│Highway to Hell – AC/DC</p>
-              <p className="text-white text-sm">🌌│Clocks – Coldplay</p>
-              <p className="text-white text-sm">📦│Under the Bridge – Red Hot Chili Peppers</p>
-              <p className="text-white text-sm">🌊│River Flows in You – Yiruma</p>
-              <p className="text-white text-sm">📦│Comptine d'un autre été – Amélie</p>
-              <p className="text-white text-sm">🪐│Interstellar Main Theme – Hans Zimmer</p>
-              <p className="text-white text-sm">🏴‍☠️│Pirates of the Caribbean – Hans Zimmer</p>
-              <p className="text-white text-sm">🛡️│The Avengers Theme – Alan Silvestri</p>
-              <p className="text-white text-sm">🌟│City of Stars – La La Land</p>
-              <p className="text-white text-sm">🧙│Hedwig's Theme – Harry Potter</p>
-              <p className="text-white text-sm">❄️│Let It Go – Frozen</p>
-              <p className="text-white text-sm">🌙│Bella's Lullaby – Twilight</p>
-              <p className="text-white text-sm">🕴️│The Godfather Theme</p>
-              <p className="text-white text-sm">❤️│My Heart Will Go On – Titanic</p>
-              <p className="text-white text-sm">📦│The Notebook Theme</p>
-              <p className="text-white text-sm">🎈│Married Life – Up</p>
-              <p className="text-white text-sm">💭│Requiem for a Dream – Clint Mansell</p>
-              <p className="text-white text-sm">🪐│Time – Inception</p>
-              <p className="text-white text-sm">📦│Now We Are Free – Gladiator</p>
-              <p className="text-white text-sm">🏴‍☠️│He's a Pirate – Pirates of the Caribbean</p>
-              <p className="text-white text-sm">🦖│Jurassic Park Theme – John Williams</p>
-              <p className="text-white text-sm">📦│Schindler's List Theme – John Williams</p>
-              <p className="text-white text-sm">📦│Spirited Away – One Summer's Day</p>
-              <p className="text-white text-sm">🎨│Aquarela – Toquinho</p>
-              <p className="text-white text-sm">📦│Evidências – Chitãozinho & Xororó</p>
-              <p className="text-white text-sm">📦│Trem Bala – Ana Vilela</p>
-              <p className="text-white text-sm">📦│O Mundo é um Moinho – Cartola</p>
-              <p className="text-white text-sm">📦│Garota de Ipanema – Tom Jobim</p>
-              <p className="text-white text-sm">📦│Asa Branca – Luiz Gonzaga</p>
-              <p className="text-white text-sm">📦│Azul da Cor do Mar – Tim Maia</p>
-              <p className="text-white text-sm">💌│Pra Você Guardei o Amor – Nando Reis</p>
-              <p className="text-white text-sm">📦│O Leãozinho – Caetano Veloso</p>
-              <p className="text-white text-sm">📦│Chega de Saudade – João Gilberto</p>
-            </div>
-          </div>
-        </div>
-        
-        {/* Botão no final da seção */}
-        <div className="flex justify-center mt-12">
-          <button 
-            onClick={scrollToOffer}
-            className="group relative overflow-hidden min-w-[320px] px-8 py-4 rounded-xl border border-white/30 transition-all duration-300 hover:border-white/50"
-            style={{
-              background: 'linear-gradient(145deg, rgba(13,13,13,0.92) 0%, rgba(40,40,40,0.92) 100%)',
-              boxShadow: '0 0 20px rgba(255,255,255,0.1)'
-            }}
-          >
-            <div className="relative h-6 flex items-center justify-center">
-              {/* Texto normal */}
-              <div className="absolute inset-0 flex items-center justify-center gap-3 group-hover:-translate-y-8 group-hover:opacity-0 transition-all duration-300">
-                <span className="whitespace-nowrap text-white font-bold uppercase tracking-wide">QUERO APRENDER ESSAS MÚSICAS</span>
-                <ArrowRight className="w-5 h-5 text-white" />
-              </div>
-              
               {/* Texto hover */}
               <div className="absolute inset-0 flex items-center justify-center gap-3 translate-y-8 opacity-0 group-hover:translate-y-0 group-hover:opacity-100 transition-all duration-300">
                 <span className="whitespace-nowrap text-white font-bold uppercase tracking-wide">QUERO TOCAR PIANO</span>
