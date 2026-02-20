@@ -17,7 +17,7 @@ function App() {
       if (window.getCheckoutUrlWithUtms) {
         window.location.href = window.getCheckoutUrlWithUtms();
       } else {
-        window.location.href = 'https://www.ggcheckout.com/checkout/v2/KQCeWLGpZuLJgdWCTZjR';
+        window.location.href = 'https://www.ggcheckout.com/checkout/v3/L30ZVBfhnQCuy9csisM9';
       }
     }, 300);
   };
