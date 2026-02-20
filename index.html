@@ -1,0 +1,137 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>NETWORK PRO - @FRANKLIM.GUI</title>
+    <meta name="description" content="Maior Comunidade PRIVADA de NETWORK da América Latina com + De 1500 Membros" />
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="NETWORK PRO - @FRANKLIM.GUI" />
+    <meta property="og:description" content="Maior Comunidade PRIVADA de NETWORK da América Latina com + De 1500 Membros" />
+    <meta property="og:image" content="https://gledigital.com/wp-content/uploads/2025/07/Design-sem-nome-46.png" />
+    
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta property="twitter:title" content="NETWORK PRO - @FRANKLIM.GUI" />
+    <meta property="twitter:description" content="Maior Comunidade PRIVADA de NETWORK da América Latina com + De 1500 Membros" />
+    <meta property="twitter:image" content="https://gledigital.com/wp-content/uploads/2025/07/Design-sem-nome-46.png" />
+    
+    <!-- Meta Pixel Code -->
+    <script>
+      !function(f,b,e,v,n,t,s)
+      {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+      n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+      if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+      n.queue=[];t=b.createElement(e);t.async=!0;
+      t.src='https://connect.facebook.net/en_US/fbevents.js';
+      s=b.getElementsByTagName(e)[0];
+      s.parentNode.insertBefore(t,s)}(window, document,'script');
+      
+      fbq('init', '1656403728295744');
+      fbq('track', 'PageView');
+    </script>
+    
+    <!-- UTMify Scripts -->
+    <script>
+      window.pixelId = "6898f285bef320e2ac5782eb";
+      window.utmifyLoaded = false;
+      var a = document.createElement("script");
+      a.setAttribute("async", "");
+      a.setAttribute("defer", "");
+      a.setAttribute("src", "https://cdn.utmify.com.br/scripts/pixel/pixel.js");
+      a.onload = function() {
+        window.utmifyLoaded = true;
+        console.log('UTMify pixel loaded');
+      };
+      document.head.appendChild(a);
+    </script>
+    
+    <script
+      src="https://cdn.utmify.com.br/scripts/utms/latest.js"
+      data-utmify-prevent-xcod-sck
+      data-utmify-prevent-subids
+      async
+      defer
+      onload="console.log('UTMify UTMs script loaded')"
+    ></script>
+    
+    <!-- UTMify Event Tracking -->
+    <script>
+      // Aguarda o carregamento completo da página e dos scripts
+      window.addEventListener('load', function() {
+        // Dispara PageView após carregamento
+        setTimeout(function() {
+          if (window.utmify && typeof window.utmify.track === 'function') {
+            window.utmify.track('PageView');
+            console.log('UTMify PageView tracked');
+          } else {
+            console.log('UTMify not loaded yet, retrying...');
+            // Retry após mais tempo
+            setTimeout(function() {
+              if (window.utmify && typeof window.utmify.track === 'function') {
+                window.utmify.track('PageView');
+                console.log('UTMify PageView tracked (retry)');
+              }
+            }, 2000);
+          }
+        }, 1000);
+      });
+      
+      // Função para tracking de InitiateCheckout
+      function trackInitiateCheckout() {
+        if (window.utmify && typeof window.utmify.track === 'function') {
+          window.utmify.track('InitiateCheckout');
+          console.log('UTMify InitiateCheckout tracked');
+        } else {
+          console.log('UTMify not available for InitiateCheckout');
+        }
+        
+        // Facebook Pixel
+        if (window.fbq) {
+          window.fbq('track', 'InitiateCheckout');
+          console.log('Facebook InitiateCheckout tracked');
+        }
+      }
+      
+      // Função para preservar UTMs no link
+      function getCheckoutUrlWithUtms() {
+        const baseUrl = 'https://www.ggcheckout.com/checkout/v2/KQCeWLGpZuLJgdWCTZjR';
+        const currentUrl = new URL(window.location.href);
+        const utmParams = new URLSearchParams();
+        
+        // Captura UTMs da URL atual
+        const utmKeys = ['utm_source', 'utm_medium', 'utm_campaign', 'utm_term', 'utm_content'];
+        utmKeys.forEach(key => {
+          const value = currentUrl.searchParams.get(key);
+          if (value) {
+            utmParams.append(key, value);
+          }
+        });
+        
+        // Adiciona outros parâmetros relevantes
+        const otherParams = ['fbclid', 'gclid', 'ttclid'];
+        otherParams.forEach(key => {
+          const value = currentUrl.searchParams.get(key);
+          if (value) {
+            utmParams.append(key, value);
+          }
+        });
+        
+        return utmParams.toString() ? `${baseUrl}?${utmParams.toString()}` : baseUrl;
+      }
+    </script>
+    
+    <!-- End Meta Pixel Code -->
+  </head>
+  <body>
+    <noscript>
+      <img height="1" width="1" style="display:none" 
+      src="https://www.facebook.com/tr?id=1656403728295744&ev=PageView&noscript=1"/>
+    </noscript>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
