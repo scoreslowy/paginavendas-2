@@ -594,8 +594,8 @@ function App() {
                 className="absolute left-0 w-20 h-20"
                 style={{ transform: 'translateX(-15px)' }}
               />
-              <a 
-                href="https://wa.link/2yxnus"
+              <a
+                href="https://wa.link/gohaov"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="group relative overflow-hidden inline-block w-80 px-6 py-3 rounded-xl border border-green-300/50 transition-all duration-300 hover:border-green-300/70"
@@ -636,8 +636,8 @@ function App() {
               
               {/* Botão WhatsApp Mobile */}
               <div className="flex flex-col items-center gap-3">
-                <a 
-                  href="https://wa.link/b4r614"
+                <a
+                  href="https://wa.link/gohaov"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="group relative overflow-hidden inline-block w-full px-6 py-3 rounded-xl border border-green-300/50 transition-all duration-300 hover:border-green-300/70"
