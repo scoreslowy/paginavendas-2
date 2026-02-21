@@ -408,6 +408,29 @@ function App() {
         </div>
       </section>
 
+      {/* Seção de Vídeo de Depoimentos */}
+      <section className="py-20 bg-black">
+        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-12">
+            <h2 className="text-2xl md:text-3xl font-bold text-white">
+              Veja o que nossos últimos alunos disseram do CURSO TOCA AI:
+            </h2>
+          </div>
+
+          <div className="flex justify-center">
+            <div className="w-full max-w-2xl rounded-lg overflow-hidden">
+              <iframe
+                src="https://roiman.wistia.com/medias/krtqvx0a65"
+                title="Depoimentos de alunos"
+                allowFullScreen
+                frameBorder="0"
+                className="w-full aspect-video"
+              ></iframe>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Seção de Oferta */}
       <section id="offer-section" className="py-20 bg-black relative" style={{ zIndex: 10 }}>
         {/* Glow dourado grande e centralizado */}
