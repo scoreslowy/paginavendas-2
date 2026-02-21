@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton:wght@400&family=Inter:wght@400;500;600;700;800;900&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -20,9 +22,6 @@ html, body {
 html {
   scroll-behavior: smooth;
 }
-
-/* Import Google Fonts - Anton for display typography */
-@import url('https://fonts.googleapis.com/css2?family=Anton:wght@400&family=Inter:wght@400;500;600;700;800;900&display=swap');
 
 /* Custom CSS for hero section responsive backgrounds */
 .hero-section {
