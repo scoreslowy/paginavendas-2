@@ -413,13 +413,19 @@ function App() {
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
             <h2 className="text-2xl md:text-3xl font-bold text-white">
-              Veja o que nossos últimos <span style={{ color: '#f4c25b' }}>alunos</span> disseram do <span style={{ color: '#f4c25b' }}>CURSO TOCA AI</span>:
+              Veja o que nossos últimos alunos disseram do CURSO TOCA AI:
             </h2>
           </div>
 
           <div className="flex justify-center">
             <div className="w-full max-w-2xl rounded-lg overflow-hidden">
-              <wistia-player media-id="krtqvx0a65" aspect="1.7777777777777777"></wistia-player>
+              <iframe
+                src="https://roiman.wistia.com/medias/krtqvx0a65"
+                title="Depoimentos de alunos"
+                allowFullScreen
+                frameBorder="0"
+                className="w-full aspect-video"
+              ></iframe>
             </div>
           </div>
         </div>
