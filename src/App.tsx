@@ -661,7 +661,7 @@ function App() {
                   </div>
                 </a>
                 <img 
-                  src="https://gledigital.com/wp-content/uploads/2025/07/WhatsApp.svg_.webp"
+                  src="https://wa.link/gohaov"
                   alt="WhatsApp"
                   className="w-12 h-12"
                 />
