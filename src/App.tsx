@@ -605,10 +605,10 @@ function App() {
             
             {/* Botão WhatsApp Desktop */}
             <div className="flex relative items-center justify-center">
-              <img 
-                src="https://gledigital.com/wp-content/uploads/2025/07/WhatsApp.svg_.webp"
+              <img
+                src="/assets/whatsapp-logo-DGcuVdln.webp"
                 alt="WhatsApp"
-                className="absolute left-0 w-20 h-20"
+                className="absolute left-0 w-20 h-20 hidden lg:block"
                 style={{ transform: 'translateX(-15px)' }}
               />
               <a
@@ -627,7 +627,7 @@ function App() {
                     <span className="whitespace-nowrap text-white font-bold uppercase tracking-wide text-sm">TIRE SUAS DÚVIDAS</span>
                     <ArrowRight className="w-5 h-5 text-white" />
                   </div>
-                  
+
                   {/* Texto hover */}
                   <div className="absolute inset-0 flex items-center justify-center gap-3 translate-y-8 opacity-0 group-hover:translate-y-0 group-hover:opacity-100 transition-all duration-300">
                     <span className="whitespace-nowrap text-white font-bold uppercase tracking-wide text-sm">ABRIR CONVERSA</span>
@@ -652,7 +652,7 @@ function App() {
               </p>
               
               {/* Botão WhatsApp Mobile */}
-              <div className="flex flex-col items-center gap-3">
+              <div className="flex flex-col items-center gap-4">
                 <a
                   href="https://wa.link/gohaov"
                   target="_blank"
@@ -669,7 +669,7 @@ function App() {
                       <span className="whitespace-nowrap text-white font-bold uppercase tracking-wide text-sm">TIRE SUAS DÚVIDAS</span>
                       <ArrowRight className="w-5 h-5 text-white" />
                     </div>
-                    
+
                     {/* Texto hover */}
                     <div className="absolute inset-0 flex items-center justify-center gap-3 translate-y-8 opacity-0 group-hover:translate-y-0 group-hover:opacity-100 transition-all duration-300">
                       <span className="whitespace-nowrap text-white font-bold uppercase tracking-wide text-sm">ABRIR CONVERSA</span>
@@ -677,11 +677,6 @@ function App() {
                     </div>
                   </div>
                 </a>
-                <img 
-                  src="https://wa.link/gohaov"
-                  alt="WhatsApp"
-                  className="w-12 h-12"
-                />
               </div>
             </div>
           </div>
